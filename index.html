@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tattuu</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/9765ea33b1.js" crossorigin="anonymous"></script>
     <main>
         <header>
-            <img src="./src/img/tattuu-logo.png" alt='Arte da logo da loja Tattuu: uma silhueta de um tatu sobre o texto "Tattuu".'>
-            <ul>
-                <li>Sobre nós</li>
-                <li>Serviços</li>
-                <li>Equipe</li>
-                <li>Estúdio</li>
-                <li>Galeria</li>
-                <li>Contato</li>
+            <img src="./src/img/tattuu-logo.png" alt='Arte da logo da loja Tattuu: uma silhueta de um tatu sobre o texto "Tattuu".' class="menuLogo">
+            <ul class="menu">
+                <li class="menuItem">Sobre nós</li>
+                <li class="menuItem">Serviços</li>
+                <li class="menuItem">Equipe</li>
+                <li class="menuItem">Estúdio</li>
+                <li class="menuItem">Galeria</li>
+                <li class="menuItem">Contato</li>
             </ul>
         </header>
-        <div class="mainContent">
-            <h1>Tatuagens customizadas</h1>
-            <h2>Transforme-se numa arte ambulante.</h3>
-            <div class="lightBar"></div>
-            <button>Agende já <i class="fa-solid fa-arrow-right" style="color: #f3eafd;"></i></button>
+        <div class="mainContentOrientation">
+            <div class="mainContent">
+                <h1 class="mainTitle">Tatuagens customizadas</h1>
+                <h2 class="mainSubTitle">Transforme-se numa arte ambulante.</h3>
+                <div class="lightBar"></div>
+                <button id="mainButton">Agende já <i class="fa-solid fa-arrow-right" style="color: #f3eafd;"></i></button>
+            </div>
         </div>
     </main>
     <div id="rowContent">
@@ -102,5 +107,6 @@
             <p>Sessão fotográfica.</p>
         </div>
     </footer>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

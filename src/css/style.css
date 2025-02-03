@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=DM+Serif+Display:ital@0;1&display=swap');
+:root {
+    --textColor: #F3EAFD;
+    --textDarkColor: #958e9c;
+    --backgroundColor: #06010C;
+    --color1: #1D0B2F;
+    --darkColor1: #0e0617;
+}
+* {
+    font-size: 1rem;
+    font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+    color: var(--textColor);
+}
+body {
+    background-color: var(--backgroundColor);
+}
+/* Header */
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 2rem;
+    border-bottom: 1px solid var(--textColor);
+}
+main {
+    background-image: url(../img/background.png);
+    background-position: center;
+    box-shadow: inset 0 40px 40px rgba(6, 1, 12, 0.9), inset 0 -80px 60px rgba(6, 1, 12, 1);
+    background-size: cover;
+    height: 100vh;
+}
+.menuLogo {
+    height: 3rem;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+    font-size: 1.5rem;
+}
+.menuItem {
+    cursor: pointer;
+    transition: .5s;
+}
+.menuItem:hover {
+    color: var(--textDarkColor);
+}
+/* Main Content */
+.mainContentOrientation {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.mainContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.mainTitle {
+    font-size: 5rem;
+    font-family: 'Courgette', Arial, Helvetica, sans-serif;
+}
+.mainSubTitle {
+    padding-left: 5%;
+    text-indent: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Courgette', Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+.lightBar {
+    width: 7rem;
+    height: 1px;
+    background-color: #F3EAFD;
+    align-self: center;
+}
+button {
+    align-self: center;
+    font-size: 1.4rem;
+    width: 40%;
+    height: 3rem;
+    background-color: var(--color1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+button:hover {
+    background-color: var(--darkColor1);
+    color: var(--textDarkColor);
+}
+i {
+    transition: 1s ease-in-out;
+}
