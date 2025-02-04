@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://kit.fontawesome.com/9765ea33b1.js" crossorigin="anonymous"></script>
+<body onload="reg();">
+    <div id="notificationSection">
+        <p>Formulário enviado <i class="fa-solid fa-circle-check" style="color: #f3eafd;"></i></p>
+    </div>
     <main>
         <header>
             <img src="./src/img/tattuu-logo.png" alt='Arte da logo da loja Tattuu: uma silhueta de um tatu sobre o texto "Tattuu".' class="menuLogo">
             <ul class="menu">
-                <li class="menuItem">Sobre nós</li>
-                <li class="menuItem">Serviços</li>
-                <li class="menuItem">Equipe</li>
-                <li class="menuItem">Estúdio</li>
-                <li class="menuItem">Galeria</li>
-                <li class="menuItem">Contato</li>
+                <li class="menuItem"><a href="#aboutUs">Sobre nós</a></li>
+                <li class="menuItem"><a href="#services">Serviços</a></li>
+                <li class="menuItem"><a href="#team">Equipe</a></li>
+                <li class="menuItem"><a href="#studio">Estúdio</a></li>
+                <li class="menuItem"><a href="#gallery">Galeria</a></li>
+                <li class="menuItem"><a href="#contact">Contato</a></li>
             </ul>
         </header>
         <div class="mainContentOrientation">
@@ -28,17 +32,17 @@
             </div>
         </div>
     </main>
-    <div id="rowContent">
+    <div class="rowContent">
         <section id="aboutUs">
             <h3 class="sectionTitle">Sobre nós</h3>
-            <p class="sextionParagraph">O Estúdio Tattuu está localizado na R. Antônio Vargas, 853, Rio Grande do Sul - RS. Aberto de segunda-feira á sexta-feira, das <span>08:00 - 18:00</span>.</p>
-            <p sextionParagraph>Idealizado por <span>Lucas Santiago</span>, prodissional no ramo há mais de 5 anos.</p>
+            <p class="sectionParagraph">O Estúdio Tattuu está localizado na R. Antônio Vargas, 853, Rio Grande do Sul - RS. Aberto de segunda-feira á sexta-feira, das <span>08:00 - 18:00</span>.</p>
+            <p class="sectionParagraph">Idealizado por <span>Lucas Santiago</span>, profissional no ramo há mais de 5 anos.</p>
         </section>
         <section id="services">
             <h3 class="sectionTitle">Serviços</h3>
-            <p class="sectionParagraph">O Estúdio Tattuu oferece serviços de tatuagem preto e branco, coloridas e sessões fotográficas;</p>
-            <p><span>Tatuagem:</span> Valor variável pelo tamanho e cor;</p>
-            <p><span>Sessão fotográfica:</span> R$100 por 5 fotografias.</p>
+            <p class="sectionParagraph">O Estúdio Tattuu oferece serviços de tatuagem preto e branco, coloridas e sessões fotográficas:</p>
+            <p class="sectionParagraph"><span>Tatuagem:</span> Valor variável pelo tamanho e cor;</p>
+            <p class="sectionParagraph"><span>Sessão fotográfica:</span> R$100 por 5 fotografias.</p>
         </section>
     </div>
     <section id="team">
@@ -56,35 +60,38 @@
     </section>
     <section id="studio">
         <h3 class="sectionTitle">Estúdio</h3>
-        <img src="./src/img/chang-hsien-HsQuhb9GBPM-unsplash.jpg" alt="Um homem deitado num banco enquanto outro homem tatua sua barriga sendo iluminados por uma lãmpada em um pequeno estúdio cheio de quadros variádos." class="studioImage">
-        <img src="./src/img/chang-hsien-HsQuhb9GBPM-unsplash.jpg" alt="Três homens num pequeno estúdio cheio de quadros variádos e lâmpadas de teto, um homem está sentado num banco olhando para baixo, outro está sentado numa cadeira e o outro está numa poltrona." class="studioImage">
+        <div class="studioImagesOrientation">
+            <img src="./src/img/motoki-tonn-RF6NLFcWsxk-unsplash.jpg" alt="Um homem deitado num banco enquanto outro homem tatua sua barriga sendo iluminados por uma lãmpada em um pequeno estúdio cheio de quadros variádos." class="studioImage">
+            <img src="./src/img/chang-hsien-HsQuhb9GBPM-unsplash.jpg" alt="Três homens num pequeno estúdio cheio de quadros variádos e lâmpadas de teto, um homem está sentado num banco olhando para baixo, outro está sentado numa cadeira e o outro está numa poltrona." class="studioImage">
+        </div>
     </section>
-    <section id="galery">
+    <section id="gallery">
         <h3 class="sectionTitle">Galeria</h3>
-        <div class="galeryImagesGroup">
-            <img src="./src/img/javier-reyes-HM0vpG143Ss-unsplash.jpg" alt="Mulher de cabelo curto onludado de por preta com um vestido vermelho, usando um relófio e anel no dedo indicador da mão esquerda, com as maõs no rosto e uma grande tatuagem cobrindo seu braço direito, em um ambiente de vegetação média." class="galeryImage">
-            <img src="./src/img/jasmin-chew-WbWOF8z_NGQ-unsplash.jpg" alt="Mulher de cabelo liso, médio e de cor ruivo usando um vestido preto sem manga e uma grande tatuagem de uma flor e um dragão na lateral ombro eté o braço." class="galeryImage">
-            <img src="./src/img/bora-sozuer-F6VB3oH5ovA-unsplash.jpg" alt="Homem de cabelo curto, sem camisa, usando um colar e gritando num fundo preto. A parte superior do peitoral com uma grande tatuagem de uma escrita." class="galeryImage">
-            <img src="./src/img/paul-pastourmatzis-LcGP2Iy83T0-unsplash.jpg" alt="Braço de um homem usando uma pulseira preta, seu dedo indicador tocando um lago em um fundo de floresta e morros. Seu braço tem uma gande tatuagem de um tubarão martelo comm várias ondas em seu corpo." class="galeryImage">
-            <img src="./src/img/ian-edokov-iOVoyi-MupI-unsplash.jpg" alt="Mulher de costa de cabelo liso de cor castanho amarrado em um coque num ambiente cheio de galhos e folhas verdes. Há uma assinatura tatuada atrás de seu pescoço." class="GaleryImage">
-            <img src="./src/img/dmytro-nushtaiev-iMfu0nKMyeI-unsplash.jpg" alt=" Mulher sentada de cabelo ruivo com mechas sobre seu rosto, vestida de uma blusa preta e calça preta. Seu braço com uma pequena tatuagem de um coração realista sobre seu joelho." class="galeryImage">
-            <img src="./src/img/seyi-ariyo-ShX35xx2FhA-unsplash.jpg" alt="Homem de perfil com cabelo crespo de cor preta com pontas loiras, braba de cor preta. Seu corpo coberto de tatuagens indígenas." class="galeryImage">
+        <div class="galleryImagesGroup">
+            <img src="./src/img/javier-reyes-HM0vpG143Ss-unsplash.jpg" alt="Mulher de cabelo curto onludado de por preta com um vestido vermelho, usando um relófio e anel no dedo indicador da mão esquerda, com as maõs no rosto e uma grande tatuagem cobrindo seu braço direito, em um ambiente de vegetação média." class="galleryImage">
+            <img src="./src/img/jasmin-chew-WbWOF8z_NGQ-unsplash.jpg" alt="Mulher de cabelo liso, médio e de cor ruivo usando um vestido preto sem manga e uma grande tatuagem de uma flor e um dragão na lateral ombro eté o braço." class="galleryImage">
+            <img src="./src/img/bora-sozuer-F6VB3oH5ovA-unsplash.jpg" alt="Homem de cabelo curto, sem camisa, usando um colar e gritando num fundo preto. A parte superior do peitoral com uma grande tatuagem de uma escrita." class="galleryImage">
+            <img src="./src/img/paul-pastourmatzis-LcGP2Iy83T0-unsplash.jpg" alt="Braço de um homem usando uma pulseira preta, seu dedo indicador tocando um lago em um fundo de floresta e morros. Seu braço tem uma gande tatuagem de um tubarão martelo comm várias ondas em seu corpo." class="galleryImage">
+            <img src="./src/img/dmytro-nushtaiev-iMfu0nKMyeI-unsplash.jpg" alt=" Mulher sentada de cabelo ruivo com mechas sobre seu rosto, vestida de uma blusa preta e calça preta. Seu braço com uma pequena tatuagem de um coração realista sobre seu joelho." class="galleryImage">
         </div>
     </section>
     <section id="contact">
         <h3 class="sectionTitle">Contato</h3>
-        <div class="contactCard">
-            <div class="contactCardImage">
-                <img src="./src/img/background.png" alt="Homem de barca curta tatuando o pescoço de alguém. Suas mãos com luvas de cor azul e uma agulha de tatuagem, seus braços com várias tatuagens.">
-            </div>
-            <div class="contactCardText">
-                <h4 class="contactCardTitle">Entre em contato</h4>
-                <label for="fullName">Nome completo:</label>
-                <input type="text" name="fullName" id="fullName" class="contactInput">
-                <label for="fullName">Email:</label>
-                <input type="text" name="email" id="email" class="contactInput">
-                <label for="fullName">Mensagem::</label>
-                <textarea name="message" id="message" class="contactMessage"></textarea>
+        <div class="contactFormOrientation">
+            <div class="contactForm">
+                <div class="contactFormImage">
+                    <img src="./src/img/background.png" alt="Homem de barca curta tatuando o pescoço de alguém. Suas mãos com luvas de cor azul e uma agulha de tatuagem, seus braços com várias tatuagens.">
+                </div>
+                <form class="contactFormMainContent">
+                    <h4 class="contactFormTitle">Entre em contato</h4>
+                    <label for="fullName">Nome completo:</label>
+                    <input type="text" name="fullName" id="fullName" class="contactInput" required>
+                    <label for="fullName">Email:</label>
+                    <input type="email" name="email" id="email" class="contactInput" required>
+                    <label for="fullName">Mensagem:</label>
+                    <textarea name="message" id="message" class="contactMessage contactInput" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </section>

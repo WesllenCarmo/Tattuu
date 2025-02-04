@@ -5,14 +5,19 @@
     --backgroundColor: #06010C;
     --color1: #1D0B2F;
     --darkColor1: #0e0617;
+    --color2: #513D66;
+    --lightColor2: #695181;
+    --color3: #2E1844;
 }
 * {
-    font-size: 1rem;
-    font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
-    color: var(--textColor);
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--backgroundColor);
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+    color: var(--textColor);
+    overflow-x: hidden;
 }
 /* Header */
 header {
@@ -79,6 +84,8 @@ main {
     align-self: center;
 }
 button {
+    font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+    color: var(--textColor);
     align-self: center;
     font-size: 1.4rem;
     width: 40%;
@@ -90,7 +97,7 @@ button {
     align-items: center;
     gap: 1rem;
     cursor: pointer;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 button:hover {
     background-color: var(--darkColor1);
@@ -98,4 +105,161 @@ button:hover {
 }
 i {
     transition: 1s ease-in-out;
+}
+/* Info & Services */
+.sectionTitle {
+    font-size: 2rem;
+    margin: 2.5rem 0;
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+}
+.sectionParagraph {
+    line-height: 1.5rem;
+    text-indent: 1.5rem;
+}
+.rowContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#aboutUs, #services {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    row-gap: 1rem;
+}
+#aboutUs .sectionTitle, #services .sectionTitle {
+    align-self: center;
+}
+span {
+    color: var(--color2);
+}
+/* Teammates */
+.teammateImage {
+    width: 16rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+/* Studio */ 
+.studioImagesOrientation {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10% 0 10%;
+    gap: 2rem;
+    align-items: end;
+}
+.studioImage {
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+}
+.studioImage:not(:first-child) {
+    align-self: flex-start;
+}
+/* Gallery */
+.galleryImagesGroup {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.galleryImage {
+    width: 20rem;
+    border-radius: 10px;
+}
+/* contact */
+.contactFormOrientation {
+    display: flex;
+    justify-content: center;
+}
+.contactForm {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color2);
+    width: 80%;
+    height: 30rem;
+    border-radius: 20px;
+    gap: 3rem;
+}
+.contactFormImage {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contactFormImage img {
+    width: 98%;
+    height: 98%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 1rem;
+}
+.contactFormTitle {
+    font-size: 2rem;
+}
+.contactFormMainContent {
+    width: 70%;
+    padding: 2rem 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+.contactInput {
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--lightColor2);
+    color: var(--textColor);
+    padding: .5rem;
+}
+.contactMessage {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 25%;
+    max-height: 25%;
+    padding: .5rem;
+}
+.contactFormMainContent button {
+    background-color: var(--backgroundColor);
+}
+.contactFormMainContent button:hover {
+    background-color: var(--color1);
+}
+footer {
+    margin-top: 2rem;border-top: 1px solid var(--textColor);
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img {
+    width: 10rem;
+}
+.footerInfoSection {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footerTitle {
+    color: var(--lightColor2);
+    align-self: center;
+}
+footer a, footer p {
+    font-size: 1rem;
+}
+footer a {
+    text-decoration: underline;
+}
+#notificationSection {
+    width: 14rem;
+    padding: .5rem;
+    background-color: var(--color3);
+    color: var(--textColor);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    right: 0vh;
+    bottom: 10vh;
+    display: none;
 }
