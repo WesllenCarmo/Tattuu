@@ -11,6 +11,7 @@
   --font-courgette: 'Courgette', sans-serif;
   --font-dm-serif-display-regular: 'DM Serif Display Regular';
   --font-dm-serif-display-italic: 'DM Serif Display Italic';
+  --background-image-desktop-hero: url('./assets/background.webp')
 }
 @font-face {
   font-family: 'Courgette';

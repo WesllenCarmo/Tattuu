@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TattuuLogo from '../assets/tattuu-logo.webp'
-import '../App.css'
 
 const NavBar = () => {
   return (

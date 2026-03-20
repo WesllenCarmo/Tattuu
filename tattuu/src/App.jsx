@@ -9,7 +9,7 @@ import Contact from "./components/routes/Contact";
 
 function App() {
   return (
-    <div className='font-dm-serif-display-regular'>
+    <div className='font-dm-serif-display-regular text-custom-white'>
       <NavBar />
       <div>
         <Routes>

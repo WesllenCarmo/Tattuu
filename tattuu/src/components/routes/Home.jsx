@@ -1,9 +1,23 @@
-import React from 'react'
-
+import React from "react";
+import LightBar from "../LightBar";
+import Button from "../Button";
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="bg-custom-dark-purple">
+      <div className="w-full h-screen bg-desktop-hero mask-t-from-90% mask-b-from-80% flex justify-end">
+        <div className="mr-8 gap-8 w-2/5 flex flex-col self-center">
+          <h1 className="text-6xl mr-8 font-courgette font-bold">
+            Tatuagens Customizadas em Porto Alegre - RS
+          </h1>
+          <div className="w-3/4 flex flex-col gap-6 items-center self-center">
+            <h2 className="text-3xl font-courgette">Transforme-se em uma arte ambulante.</h2>
+            <LightBar />
+            <Button text="Agende já"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
