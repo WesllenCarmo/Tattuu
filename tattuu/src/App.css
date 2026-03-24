@@ -7,7 +7,7 @@
   --color-custom-dark-purple3: #0e0617;
   --color-custom-dark-purple4: #2e1844;
   --color-custom-gray: #513d66;
-  --color-custom-light-gray: #695181;
+  --color-custom-light-purple: #695181;
   --font-courgette: 'Courgette', sans-serif;
   --font-dm-serif-display-regular: 'DM Serif Display Regular';
   --font-dm-serif-display-italic: 'DM Serif Display Italic';
@@ -30,4 +30,10 @@
   src: url('./assets/fonts/DM_Serif_Display/DMSerifDisplay-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
+}
+* {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--color-custom-dark-purple);
 }

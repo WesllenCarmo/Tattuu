@@ -12,8 +12,10 @@ const NavBar = () => {
       </div>
       <div className='flex gap-16 text-2xl'>
         <Link to='/' className='hover:text-custom-white-modified transition duration-400'>Início</Link>
+        {/* <Link to='/about' className='hover:text-custom-white-modified transition duration-400'>Sobre Nós</Link>
+         */}
+         <a href="/#about">Sobre Nós</a>
         <Link to='/work' className='hover:text-custom-white-modified transition duration-400'>Trabalhos</Link>
-        <Link to='/about' className='hover:text-custom-white-modified transition duration-400'>Sobre Nós</Link>
         <Link to='/services' className='hover:text-custom-white-modified transition duration-400'>Serviços</Link>
         <Link to='/contact' className='hover:text-custom-white-modified transition duration-400'>Contatos</Link>
       </div>
